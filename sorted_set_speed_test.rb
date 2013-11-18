@@ -1,5 +1,5 @@
 REPS = 100
-COUNT = 10000
+COUNT = 1000
 
 class SortedSetTest
   def self.run_tests(sets)
@@ -112,5 +112,8 @@ end
 
 require_relative 'sorted_set'
 
-SortedSetTest.run_tests([BasicArraySortedSet.new, ArraySortedSet.new, HashSortedSet.new])
+SortedSetTest.run_tests([BasicArraySortedSet.new, ArraySortedSet.new, BinaryArraySortedSet.new
+ ])
 SortedSetTest.print_all
+
+
